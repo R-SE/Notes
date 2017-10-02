@@ -1,0 +1,7 @@
+JSON
+
+JavaScript Object Notation
+  - lightweight data-interchange format based off JS
+  - often used with AJAX (more like AJAJ)
+
+JSON Data Types
