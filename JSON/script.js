@@ -29,22 +29,22 @@ var myButton = document.getElementById("btn");
 var objContainer = document.getElementById("button-output");
 //event listener for button
 myButton.addEventListener("click", function() {
+  // this is a common vanillaJS request using XHR object; we can do it quicker with JQuery
   var myReq = new XMLHttpRequest();
   myReq.open('GET', 'https://learnwebcode.github.io/json-example/animals-' + pageCounter + '.json'); //GET receives, POST sends data
   myReq.onload = function() {
-    if (myReq.status >= 200 && myReq.status < 400) {
-      var myResp = JSON.parse(myReq.responseText); //this parses the response data and assigns it to a variable myResp
+    if (this.status >= 200 && this.status < 400) {
+      var myResp = JSON.parse(this.responseText); //this parses the response data and assigns it to a variable myResp
       renderHTML(myResp);
     } else {
       console.log("ERROOOOOOOOOOOOOR");
     }
   }
-
   myReq.onerror = function() {
     console.log("Connection error");
   };
-
   myReq.send();
+  //////////////////////
   pageCounter++;
   if (pageCounter > 3) {
     btn.classList.add("hide-me"); // adds CSS class "hide-me"
