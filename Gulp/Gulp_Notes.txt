@@ -1,5 +1,32 @@
 Gulp
+[as explained by Traversy Media]
 
 - Front end build tool & task runner
 - Built on Node.js & npm
-- Uses plugins for tasks
+- Uses plugins for tasks (minification, concats, testing, linting, dev servers)
+- faster than Grunt (which uses files + configs)
+
+Uses node streams with pipelines (like || in CLI)
+- .pipe() // output of one expression becomes input of another expression
+
+[Guide]
+  Prereqs:
+    Install NodeJS & npm
+
+1) $ npm install -g gulp-cli
+2) $ npm init in project folder to create package.json
+3) $ npm install --save-dev gulp and plugins (gulp-uglify, gulp-imagemin
+4) create gulpfile.js to keep track of tasks
+  a) name functions for use later
+        const gulp = require('gulp');
+        const imagemin = require('gulp-imagemin');
+        const mini = require('gulp-uglify');
+  b) define tasks to execute in CLI
+        gulp.task('mini', function(){       //sets task name to use in CLI
+        gulp.src('src/scripts/*.js')
+        .pipe(mini())                       // call the function we defined up at very top
+        .pipe(gulp.dest('dist/scripts'));
+        });
+5) $ gulp taskname
+
+Attached gulpfile.js sheet is set up for common tasks.
