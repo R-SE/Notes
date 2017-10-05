@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<article>
+				<header>articleheader</header>
+				<footer>ArticleFooter</footer>
+			</article>
+		</section>
+		<section>
+			<div>
+				<p> lorem ipsum <span class="company name">important</span> tempor skfjsdlkfjsdlkfsdfkljdf </p>
+			</div>
+		</section>
+		<aside>
+		</aside>
+		<footer>
+		</footer>
+	</body>
+</html>
+
+//semantic markup structuring
