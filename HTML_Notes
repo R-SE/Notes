@@ -34,4 +34,18 @@
 	</body>
 </html>
 
-//semantic markup structuring
+// END OF SEMANTIC MARKUP STRUCTURING
+
+/* OLDSCHOOL CLEARFIX CODE FOR FLOATS*/
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+zoom: 1;
+}
+	
