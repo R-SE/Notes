@@ -1,0 +1,44 @@
+body {
+  background-color: rgba(2,3,4,.5);
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px) {
+
+nav {
+ text-transform: uppercase;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex/grid|inline-grid|subgrid;
+  flex-direction: column/row; //when column, flex controls height; when row, flex controls width
+  justify-content: flex-start|flex-end|center|space-around|space-between;
+  align-items: flex-start|flex-end|center|stretch|baseline;
+}
+
+section {
+  flex: 3; //shorthand for flex-shrink|flex-basis|flex-grow; 
+}
+
+section .item {
+  position: fixed|absolute|relative; //abs should be used as child of relative ele
+  align-self: flex-start|flex-end|center|stretch|baseline;
+}
+
+aside {
+  flex: 1;
+  z-index: 10;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+}
