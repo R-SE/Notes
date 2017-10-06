@@ -2,6 +2,8 @@
 
 <html>
 	<head>
+		<meta charset="utf-8">
+		<link rel="styles.css" type="text/css">
 	</head>
 	<body>
 		<header>
@@ -28,6 +30,7 @@
 		</aside>
 		<footer>
 		</footer>
+		<link rel="script.js" type="text/javascript">
 	</body>
 </html>
 
