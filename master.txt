@@ -1,0 +1,13 @@
+HTML5
+CSS3
+  -@media query (responsive layout)
+  -SASS preprocessor (organization of larger sheets + bunch of features)
+  -CanIUse.com (browser support)
+  -Modernizr (feature detection)
+
+Git (version control)
+  -Github (repository)
+
+Gulp (task runner)
+
+ReactJS/AngularJS framework
