@@ -42,3 +42,32 @@ img {
 }
 
 }
+
+/* FONT PROPS */
+font-family: ;
+font-size: ;
+line-height: ;
+text-align: left|right|center|justify;
+font-weight: ;
+font-style: ;
+letter-spacing: ;
+word-spacing: ;
+text-shadow: ;
+text-transform: ;
+text-decoration: ;
+text-indent: ;
+
+/* BACKGROUND PROPS */
+background: url(../images/thing) center top no-repeat cover,
+            url(../images/thing) center bottom no-repeat cover;
+background-color: ;
+background-image: url(../images/thing);
+background-repeat: repeat-x|repeat-y|no-repeat;
+background-position: right center; //controls x and y, important for spritesheets
+background-size: cover;
+
+background-color: blue;
+//in between these two gradient methods are a series of fallbacks
+background-image: linear-gradient(to bottom right, blue, red);
+
+
