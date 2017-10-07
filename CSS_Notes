@@ -1,0 +1,98 @@
+body {
+  background-color: rgba(2,3,4,.5);
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px) {
+
+nav {
+ text-transform: uppercase;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex/grid|inline-grid|subgrid;
+  flex-direction: column/row; //when column, flex controls height; when row, flex controls width
+  justify-content: flex-start|flex-end|center|space-around|space-between;
+  align-items: flex-start|flex-end|center|stretch|baseline;
+}
+
+section {
+  flex: 3; //shorthand for flex-shrink|flex-basis|flex-grow; 
+}
+
+section .item {
+  position: fixed|absolute|relative; //abs should be used as child of relative ele
+  align-self: flex-start|flex-end|center|stretch|baseline;
+}
+
+aside {
+  flex: 1;
+  z-index: 10;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+}
+
+/* FONT PROPS */
+font-family: ;
+font-size: ;
+line-height: ;
+text-align: left|right|center|justify;
+font-weight: ;
+font-style: ;
+letter-spacing: ;
+word-spacing: ;
+text-shadow: ;
+text-transform: ;
+text-decoration: ;
+text-indent: ;
+
+/* BACKGROUND PROPS */
+background: url(../images/thing) center top no-repeat cover,
+            url(../images/thing) center bottom no-repeat cover;
+background-color: ;
+background-image: url(../images/thing);
+background-repeat: repeat-x|repeat-y|no-repeat;
+background-position: right center; //controls x and y, important for spritesheets
+background-size: cover;
+
+background-color: blue;
+//in between these two gradient methods are a series of fallbacks
+background-image: linear-gradient(to bottom right, blue, red);
+
+/* MISC STYLING PROPS */
+box-shadow: inset 1px 1px 3px #000; //horiz offset, vert offset, blur radius, color
+border-radius: 25% 50% 35% 50%; //clockwise values, can also use 2 values for corners 1,3 & 2,4. Use horz/vert values for elliptical
+transform: rotate(25deg) scale(1.5) skewX(10deg) skewY(5deg) translateX(50px) translateY(10px) | translate(50px, 10px)
+transform-origin: 0 0 ; //sets pivot point in x,y for transform (point default is 50%,50%)
+
+/* TRANSITIONS */
+overflow: hidden; //set this on parent elements to hide child elements when out of frame
+transition-property: all // or any props to be transitioned
+transition-duration: 1s;
+transition-timing-function: ease-in | ease-out | ease-in-out; //all these props can be combined into one "transition" prop\
+
+/* ANIMATIONS */
+@keyframes fadeBounce {             //define our animation
+  0% {
+  //properties like opacity, transform
+  }
+  100% {
+  //properties like opacity, transform
+  }
+}
+animation-name: fadeBounce; animation-duration: 1s; animation-delay: 1s; //give elements this property to use it
+animation-fill-mode: forwards; //leaves end animation as permanent state
+animation-iteration-count: infinite; // loop number
+animation-direction: alternate;
+

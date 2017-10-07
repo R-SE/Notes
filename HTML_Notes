@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+   		<meta name="description" content="MY DESCRIPTION HERE">
+    		<meta name="keywords" content="MY, KEYWORDS, HERE">
+    		<meta name="author" content="Rose Lin">
+    		<link href="CSS/main.css" type="text/css" rel="stylesheet">
+    		<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Raleway" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<article>
+				<header>articleheader</header>
+				<footer>ArticleFooter</footer>
+			</article>
+		</section>
+		<section>
+			<div>
+				<p> lorem ipsum <span class="company name">important</span> tempor skfjsdlkfjsdlkfsdfkljdf </p>
+			</div>
+		</section>
+		<aside>
+		</aside>
+		<footer>
+		</footer>
+		<script src="script.js" type="text/javascript">
+	</body>
+</html>
+
+// END OF SEMANTIC MARKUP STRUCTURING
+
+/* OLDSCHOOL CLEARFIX CODE FOR FLOATS*/
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+zoom: 1;
+}
+	
