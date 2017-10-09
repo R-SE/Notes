@@ -1,8 +1,8 @@
 # Notes
 This is a collection of various notes I've made while learning how to program
 
-HTML5
-CSS3
+- HTML5
+- CSS3
   - @media query (responsive layout) & Flexbox/CSS Grid
   - SASS preprocessor
       - variables, better resp design, mixins, partials, extenders, nesting
@@ -10,7 +10,7 @@ CSS3
   - Modernizr (feature detection)
   - Modern.ie (Browser Testing)
     - Browsers: Chrome, Firefox, Opera, Safari, IE
-JavaScript
+- JavaScript
   - ReactJS/AngularJS framework
   - NodeJS
     - npm
