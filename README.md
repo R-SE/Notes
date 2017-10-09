@@ -21,12 +21,12 @@ JavaScript
 
 [Workflow Tools]
 
-Linux CLI
-Git (version control)
+- Linux CLI
+- Git (version control)
   + Github (repository)
-Gulp (task runner)
-Atom/Vim (text-editor)
-Chrome Developer Tools
+- Gulp (task runner)
+- Atom/Vim (text-editor)
+- Chrome Developer Tools
   - DOM manipulation
   - Debugger
   - Device testing
