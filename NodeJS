@@ -12,11 +12,12 @@ Two main functions:
 
 NPM
 [prereqs: install Node via NVM, then install NPM]
-  - modules get installed into root of working directory
+- modules get installed into root of working directory
      - npm install -g express (install mod globally)
-  - npm init creates package.json
+- npm init creates package.json
     - mods get installed into node_modules folder
     - npm install gulp --save-dev (save dev dependencies into package.json)
-    - npm install gulp -S
- 
+    - npm install gulp
+- npm install auto-installs all the packages in package.json file & creates node_modules folder
+- enable caching -- npm config set cache-min 9999999 
  
