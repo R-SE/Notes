@@ -1,0 +1,18 @@
+- Event Delegation: the process of attaching an event-listener to an element so that event handlers can fire on any of its descendants
+  - eg putting a listener on a <ul>, and having the event handler figure out which <li> to work with
+  - eliminates the need to individually target each child, thus avoiding a lot of needless code (stay DRY)
+- Event Bubbling: also known as Propagation, wherein events on one element will "bubble" upwards to affect all parents
+  - eg clicking on the <a> within an <li> will also affect the <li> and its <ul> and the <body>
+- 
+
+
+- Keyword 'this'
+- Closures
+- Constructor functions
+- IIFE - immediately-invoked function expression; usually used for data privacy b/c variables created w/in an IIFE cannot be accessed outside the scope of the function; IIFEs are anonymous functions and can only be used once
+- Promises
+
+
+Creating functions:
+Declaration - function myFunc() {logic}
+Expression w/ return value of function - var myFunc = function() {logic} OR var myObj = {myFunc: function() {logic}}
