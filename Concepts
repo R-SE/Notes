@@ -3,7 +3,12 @@
   - eliminates the need to individually target each child, thus avoiding a lot of needless code (stay DRY)
 - Event Bubbling: also known as Propagation, wherein events on one element will "bubble" upwards to affect all parents
   - eg clicking on the <a> within an <li> will also affect the <li> and its <ul> and the <body>
-- 
+- Hoisting: behind the scenes, JS will hoist certain things to the top, including variable declarations (but not initializations) and function declarations
+- Null vs Undefined: both are empty values, but 'undefined' is a placeholder JS uses for declared but uninitialized variables, whereas null is a user-assigned value. typeof(undefined) is undefined, but typeof(null) is object
+- Arrow functions: 
+- Prototypical Inheritance: all objects have a property called "prototype" which houses methods and properties; *inheritance and lookup via prototype chain instead of explicit declaration within each object
+
+
 
 
 - Keyword 'this'
@@ -16,3 +21,9 @@
 Creating functions:
 Declaration - function myFunc() {logic}
 Expression w/ return value of function - var myFunc = function() {logic} OR var myObj = {myFunc: function() {logic}}
+
+[Best Practices]
+- let & const don't hoist, use blockscope not function scope, & are only ES6. const cannot be reassigned
+- 
+- Use arrow notation () =>
+- Use === over == (both comparison operators, but == coerces the two values before checking for equality; === compares value & type)
