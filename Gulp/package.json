@@ -1,21 +1,13 @@
 {
-  "name": "travelsite",
+  "name": "default",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/R-SE/travelSite.git"
-  },
   "author": "Rose",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/R-SE/travelSite/issues"
-  },
-  "homepage": "https://github.com/R-SE/travelSite#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
