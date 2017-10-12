@@ -3,6 +3,8 @@ This is a collection of various notes I've made while learning how to program
 
 - HTML5
 - CSS3
+  - file architecture & CSS organization
+    - BEM
   - @media query (responsive layout) & Flexbox/CSS Grid
   - SASS preprocessor
       - variables, better resp design, mixins, partials, extenders, nesting
