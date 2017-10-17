@@ -19,5 +19,4 @@ NPM
     - npm install gulp --save-dev (save dev dependencies into package.json)
     - npm install gulp
 - npm install auto-installs all the packages in package.json file & creates node_modules folder
-- enable caching -- npm config set cache-min 9999999 
- 
+- enable caching -- npm config set cache-min 9999999
