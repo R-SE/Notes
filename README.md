@@ -3,6 +3,8 @@ This is a collection of various notes I've made while learning how to program
 
 HTML5
 CSS3
+  - file architecture
+    - SMACSS organization + BEM naming methodology
   - Responsive layout via media query & Flexbox/CSS Grid
     - mobile-first design, responsive images, SVG spritesheets
   - SASS
@@ -11,7 +13,7 @@ CSS3
   - Modernizr (feature detection)
   - Modern.ie (Browser Testing)
     - Browsers: Chrome, Firefox, Opera, Safari, IE
-JavaScript
+- JavaScript
   - ReactJS/AngularJS framework
   - NodeJS
     - npm
