@@ -13,10 +13,17 @@
   - both are empty values, but 'undefined' is a placeholder JS uses for declared but uninitialized variables, whereas null is a user-assigned value. typeof(undefined) is undefined, but typeof(null) is object 
 ### Prototypical Inheritance
   - all objects have a property called "prototype" which houses methods and properties; *inheritance and lookup via prototype chain instead of explicit declaration within each object
-### Keyword `this`:
+### Keyword `this`
   - takes the value of the closest parent object, e.g. in an object declaration, `this` takes the value of the object
   - refers to the global object if not within an object declaration
-  - 
+  - when using `new` (constructor function), `this` will bind to the new object created
+  - call, bind, apply
+    - call & apply are invoked immediately. The first arg is the object that `this` should refer to
+      ```javascript
+      function add(b,c){return this.a + b + c);}
+      var myObj = {a: 1, b: 2}
+      add.call(myObj, 3, 4); //returns 8
+      ```
 ### Closures
 ### Constructor functions
 ### IIFE
