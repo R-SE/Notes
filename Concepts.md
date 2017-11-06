@@ -26,11 +26,11 @@
 
 
 Creating functions:
-Declaration - function myFunc() {logic}
-Expression w/ return value of function - var myFunc = function() {logic} OR var myObj = {myFunc: function() {logic}}
+Declaration - `function myFunc(params) {statement}`
+Expression w/ return value of function - `var myFunc = function() {logic}` OR `var myObj = {myFunc: function() {logic}}`
 
 ## Best Practices
-- let & const don't hoist, use blockscope not function scope, & are only ES6. const cannot be reassigned
+- `let` & `const` don't hoist, use blockscope not function scope, & are only ES6. const cannot be reassigned
 - 
-- Use arrow notation () => {}
-- Use === over == (both comparison operators, but == coerces the two values before checking for equality; === compares value & type)
+- Use arrow notation `param => return expression` or `(param, param2) => {statement}`
+- Use `===` over `==` (both comparison operators, but `==` coerces the two values before checking for equality; `===` compares value & type)
