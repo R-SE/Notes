@@ -1,8 +1,8 @@
 # Notes
 This is a collection of various notes I've made while learning how to program
 
-HTML5
-CSS3
+- HTML5
+- CSS3
   - file architecture
     - SMACSS organization + BEM naming methodology
   - Responsive layout via media query & Flexbox/CSS Grid
@@ -14,10 +14,11 @@ CSS3
   - Modern.ie (Browser Testing)
     - Browsers: Chrome, Firefox, Opera, Safari, IE
 - JavaScript
-  - ReactJS/AngularJS framework
+  - JQuery (library)
+  - ReactJS/AngularJS (frameworks)
   - NodeJS
     - npm
-      + Gulp & webpack
+      + Gulp, Webpack, other build tools
   - AJAX
     - external APIs (esp. XHR)
     + JSON
