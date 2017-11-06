@@ -1,0 +1,8 @@
+ES6 Notation
+  
+  
+  - var vs let vs const
+    - var: function scope, can be redeclared in same scope and updated
+    - let: {block/statement/expression scope}, cannot be redeclared in same scope, but can be updated; also, two let variables in different scopes are different
+    - const: {block scope}, cannot be redeclared in same scope or reassigned entirely, but IS mutable
+    
