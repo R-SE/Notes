@@ -15,13 +15,17 @@ ES6 Notation
     - warning: `this` keyword becomes unbound, so avoid in cases like object methods, click handlers, prototype methods
     
   
-jQuery
+jQuery Reference Chart
 ==========
 |  Method        |    Vanilla JS    |  jQuery  |
 | ------------- |------------------|----------|
 | wait for DOM load | `document.addEventListener("DOMContentLoaded", function() {//code });` | `$(document).ready(//code)` |
-| object creation via selection | `document.getElementBy('Id/Tag/Class')` | `$('tag')` |
-| "" | `document.querySelectorAll('.className')` | `$('.className')` |
-| "" | `document.querySelector('#idName')` | `$('#idName')` |
+| object creation via selection (getter) | `document.getElementBy('Id/Tag/Class')` | `$('tag')` |
+| getter | `document.querySelectorAll('.className')` | `$('.className')` |
+| getter | `document.querySelector('#idName')` | `$('#idName')` |
 |modifying element class list| `.classList.add/.remove/.toggle` | `.addClass/.removeClass/.toggleClass` |
-|checking element for class | `.classList.contains("className", "className2")` | `.hasClass('className className2)`|
+|checking element for class | `.classList.contains("className", "className2")` | `.hasClass('className className2')`|
+|iterating through each item in an element | `.forEach(function(){});` | `.each()` or implicit iteration |
+|change html content | `.innerHTML()` | `.html('new content'/function())` |
+|appending content | `parentNode.appendChild(newChild)` | `parentNode.append(newChild)` |
+|prepending content | `parentNode.insertBefore(newChild, refChild)` | `refChild.before(newChild)` or `newChild.insertBefore(refChild)` |
