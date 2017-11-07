@@ -14,6 +14,10 @@ ES6 Notation
     - (param1, param2) => {statement}
     - warning: `this` keyword becomes unbound, so avoid in cases like object methods, click handlers, prototype methods
     
+## Terms
+- Parent/Ancestor, Child/Descendant, Siblings
+
+    
   
 jQuery Reference Chart
 ==========
@@ -29,3 +33,11 @@ jQuery Reference Chart
 |change html content | `.innerHTML()` | `.html('new content'/function())` |
 |appending content | `parentNode.appendChild(newChild)` | `parentNode.append(newChild)` |
 |prepending content | `parentNode.insertBefore(newChild, refChild)` | `refChild.before(newChild)` or `newChild.insertBefore(refChild)` |
+|filtering selection | ? | `element.filter('.special')` or `element.not('.special')` |
+|finding element relative to selection | ? | `.first/.last/.next/.prev/.parent/.children()` |
+|finding children/parents with item | ? | `.find('.item')/.parents('.item')` |
+|traversal methods| ? | `.end()` and `.addBack()` |
+|select element w/ specific index | ? | `$("element.eq(index)")`
+|set style of elements directly (not recommended) | ? | `.css('property', 'property value')` or `.css({'property' : 'property value'})`|
+|change form values | ? | 
+
