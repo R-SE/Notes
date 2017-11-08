@@ -21,8 +21,8 @@ ES6 Notation
   
 jQuery Reference Chart
 ==========
-|  Method             |    Vanilla JS    |  jQuery  |
-|-------------|------------------|----------|
+|  Method    |    Vanilla JS |  jQuery  |
+|--------|-------|---------------|
 | wait for DOM load | `document.addEventListener("DOMContentLoaded", function() {//code });` | `$(document).ready(//code)` |
 | object creation via selection (getter) | `document.getElementBy('Id/Tag/Class')` | `$('tag')` |
 | getter | `document.querySelectorAll('.className')` | `$('.className')` |
@@ -45,8 +45,11 @@ jQuery Reference Chart
 |remove element (unbinds handlers)| ? | `element.remove()`|
 |remove element (keeps handlers) | ? | `element.detach()`|
 |replaces elements (unbinds handlers) | ? | `.replaceWith('new stuff')`|
-|add event listeners | `element.addEventListener('eventName', functionToRun)` | `element.on('eventName', functionToRun)` or `element.eventName(functionToRun)`|
+|add event listeners | `element.addEventListener('eventName', functionToRun)` | `element.eventName(functionToRun)`|
+|add multiple event listeners | ? | `element.on('eventName eventName2', functionToRun)` |
 |trigger event (after attaching listeners)| ? | `element.trigger('eventName')` or `element.eventName();`|
-|remove event listener| ? | `element.off('eventName')`|
+|remove event listener| ? | `element.off('eventName.namespace')`|
+|event object |`this` will be bound to event element| `element.on('click',function(event){event.type/which/target/pageX/pageY}`|
+
 
 
