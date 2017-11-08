@@ -21,8 +21,8 @@ ES6 Notation
   
 jQuery Reference Chart
 ==========
-|  Method        |    Vanilla JS    |  jQuery  |
-| ------------- |------------------|----------|
+|  Method             |    Vanilla JS    |  jQuery  |
+|-------------|------------------|----------|
 | wait for DOM load | `document.addEventListener("DOMContentLoaded", function() {//code });` | `$(document).ready(//code)` |
 | object creation via selection (getter) | `document.getElementBy('Id/Tag/Class')` | `$('tag')` |
 | getter | `document.querySelectorAll('.className')` | `$('.className')` |
@@ -35,18 +35,18 @@ jQuery Reference Chart
 |prepending content | `parentNode.insertBefore(newChild, refChild)` | `refChild.before(newChild)` or `newChild.insertBefore(refChild)`, also `element.insertAfter(refChild)`|
 |filtering selection | ? | `element.filter('.special')` or `element.not('.special')` |
 |finding element relative to selection | ? | `.first/.last/.next/.prev/.parent/.children()` |
-|finding children/parents with item | ? | `.find('.item')/.parents('.item')` |
+|finding relatives with item | ? | `.find('.item')/.parents('.item')` |
 |traversal methods| ? | `.end()` and `.addBack()` |
 |select element w/ specific index | ? | `$("element.eq(index)")`
-|set style of elements directly (not recommended) | ? | `.css('property', 'property value')` or `.css({'property' : 'property value'})`|
+|set styles directly (not recommended) | ? | `.css('property', 'property value')` or `.css({'property' : 'property value'})`|
 |change form values | ? | `$( 'input[type="text"]' ).val( 'new value' )` or `$( 'select' ).val( '2' )` |
 |change element attributes| ? | `$( 'a' ).attr( 'title', 'Click me!' )` |
 |copy elements | ? | `element.clone()`|
-|remove elements (permanently & unbind event handlers)| ? | `element.remove()`|
-|remove elements (temporarily & keeps handlers) | ? | `element.detach()`|
-|replaces elements with element in arg (unbinds event handlers) | ? | `.replaceWith('new stuff')`|
+|remove element (unbinds handlers)| ? | `element.remove()`|
+|remove element (keeps handlers) | ? | `element.detach()`|
+|replaces elements (unbinds handlers) | ? | `.replaceWith('new stuff')`|
 |add event listeners | `element.addEventListener('eventName', functionToRun)` | `element.on('eventName', functionToRun)` or `element.eventName(functionToRun)`|
 |trigger event (after attaching listeners)| ? | `element.trigger('eventName')` or `element.eventName();`|
-|remove event listener on given event| ? | `element.off('eventName')`|
+|remove event listener| ? | `element.off('eventName')`|
 
 
