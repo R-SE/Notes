@@ -16,6 +16,8 @@ ES6 Notation
     
 ## Terms
 - Parent/Ancestor, Child/Descendant, Siblings
+- Event propagation: bubbling & capturing
+- 
 
     
   
@@ -50,6 +52,9 @@ jQuery Reference Chart
 |trigger event (after attaching listeners)| ? | `element.trigger('eventName')` or `element.eventName();`|
 |remove event listener| ? | `element.off('eventName.namespace')`|
 |event object |`this` will be bound to event element| `element.on('click',function(event){event.type/which/target/pageX/pageY}`|
+|prevent default behavior| ? | `event.preventDefault()`|
+|using event capturing over bubbling | useCapture = `true` as third arg in addEventListener | ? |
+
 
 
 
