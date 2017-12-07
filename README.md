@@ -11,28 +11,27 @@ This is a collection of various notes I've made while learning how to program
     - SMACSS organization + BEM naming methodology
   - Responsive layout via media query & Flexbox/CSS Grid
     - mobile-first design, responsive images, SVG spritesheets
-  - SASS
+  - **SASS** (preprocessor)
       - variables, mixins, partials, extenders, nesting
   - CanIUse.com (browser support)
   - Modernizr (feature detection)
   - Modern.ie (Browser Testing)
     - Browsers: Chrome, Firefox, Opera, Safari, IE
-    
+
 <img src="https://seeklogo.com/images/J/java-script-js-logo-ACF4AE5082-seeklogo.com.png" width="40" height="50">
 
-  - JQuery (library)
-  - ReactJS/AngularJS (frameworks)
-  - NodeJS
-    - npm
-      + Gulp, Webpack, other build tools
-  - AJAX
+- **NodeJS**
+  - npm
+    + Gulp, Webpack, other build tools
+- **JQuery** (library)
+- **ReactJS** (framework)
+- AJAX
     - external APIs (esp. XHR)
-    + JSON
-  - ECMAScript6 & Babel
+    - JSON
+- ECMAScript6 & Babel
 
 
-## Workflow Tools
-
+### Workflow Tools
 - Linux CLI
 - Git + Github
 - Atom/Vim
@@ -42,8 +41,6 @@ This is a collection of various notes I've made while learning how to program
   - Device testing
     - or Cross Browser Testing Services
 
-TO LEARN:
-MongoDB
-ExpressJS
-AngularJS
-NodeJS
+####TO LEARN:  
+**MongoDB**  
+**ExpressJS**

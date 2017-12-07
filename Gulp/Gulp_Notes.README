@@ -1,5 +1,4 @@
-Gulp
-[as explained by Traversy Media]
+#Gulp
 
 - Front end build tool & task runner
 - Built on Node.js & npm
@@ -9,14 +8,14 @@ Gulp
 Uses node streams with pipelines (like || in CLI)
 - .pipe() // output of one expression becomes input of another expression
 
-[Guide]
+###Guide
   Prereqs:
     Install NodeJS & npm
 
 1) $ npm install -g gulp-cli
 2) $ npm init in project folder to create package.json
-3) $ npm install --save-dev gulp and plugins (gulp-uglify, gulp-imagemin
-4) create gulpfile.js to keep track of tasks
+3) $ npm install --save-dev gulp and plugins (gulp-uglify, gulp-imagemin)
+4) create **gulpfile.js** to keep track of tasks
   a) name functions for use later
         const gulp = require('gulp');
         const imagemin = require('gulp-imagemin');

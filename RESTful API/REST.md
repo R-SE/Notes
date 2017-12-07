@@ -1,15 +1,44 @@
 RESTful API
 ===
-REST - Representational State Transfer, an architectural style and the most popular type of web API
+**REST** - Representational State Transfer, an architectural style and the most popular type of web API. So called because we transfer the "state", a snapshot of the object requested, with a set of properties
 
-API - application programming interface; a software layer built by companies for internal use or offered to the public. Main functions include allowing pieces of software to communicate and work with each other, or for making an API request to access a set of data outlined by endpoints. The API **specification** is a set of documentation that serves as an instruction manual.
+**API** - application programming interface; a software layer built by companies for internal use or offered to the public. Main functions include allowing pieces of software to communicate and work with each other, or for making an API request to access a set of data outlined by endpoints. The API **specification** is a set of documentation that serves as an instruction manual.
 
-Using a web API is usually as simple as:
+### Using a web API
 1) Check if a web service offers an APIs
 2) Read the documentation
 3) Sign up for API key
-4) Make API request using URL & parameters (or use a HTTP client)
+4) Make API request using URL & parameters (or use a HTTP client) in **query string**
+  - can limit amount of data by using **pagination** e.g. `GET /orders?page=2&size=200`
 5) Unpack data
+
+
+### Building an API
+1) Decide what resource(s) need to be available.
+2) Assign URLs to those resources.
+  - A resource usually has two url patterns, one a pluralization (/orders) and the other plural plus single resource id (/orders/<order_id>); these constitute the first endpoints
+3) Decide what actions the client should be allowed to perform on those resources.
+
+| HTTP method | Endpoint    | Action  |
+|-------------|-------------|---------|
+| GET | /orders | list existing orders |
+| POST | /orders | place new order |
+| GET | /orders/1 | retrieve details of order 1|
+| PUT | /orders/1 | update order 1 |
+| DELETE | /orders/1 | delete order 1 |
+4) Figure out what pieces of data are required for each action and what format they should be in.
+5) Link resources together
+  - method 1: continue growing hierarchy, e.g. `/customers/5/orders`
+  - method 2: keep resources separate, but specify additional data in body of request, e.g. `/orders/3` with `/customers/5`
+
+### Integration
+Client-driven: person interacts with client, server updates
+Server-driven: update in server occurs, client updates
+  - polling
+  - long-polling
+  - webhooks: turn client into a server so it can also listen for requests, resulting in two-way communication
+    - but, client must give callback url to server
+  - subscription webhook: automates setting up a webhook
 
 ### Resource-based
 - Use of things/objects over actions/methods
@@ -40,6 +69,11 @@ Using a web API is usually as simple as:
   - server can temporarily extend client, transferring logic to client, who then executes it
     - eg JavaScript & Java applets
 
+### Structure of a Request
+Header
+- `Content-type: application/json` must match `data-format`
+- `Accept: application/json`
+
 ### XHR (XML HTTP Request)
 - consists of **request line** that specifies type of request and what resource, **header** that sends additional info like client name, and optional **body** for data/content in POST/PUT requests.
 ```
@@ -48,7 +82,7 @@ xhr.open("GET/PUT/DELETE/POST", URI);
 xhr.send();
 console.log(xhr.status + xhr.statusText);
 ```
-#### HTTP verbs
+#### HTTP verbs/methods
 - POST: create new resource, or everything else (like sensitive info)
 - GET: read a resource; can be modified by GET parameters
 - PUT: update a resource or create a specific resource given a URI
@@ -75,7 +109,13 @@ console.log(xhr.status + xhr.statusText);
 - **500 INTERNAL SERVER ERROR** Never return this intentionally. The general catch-all error when the server-side throws an exception. Use this only for errors that the consumer cannot address from their end.
 
 ### Authentication
-- APIs may require an API key that identifies the client to the API provider. A popular protocol is **OAuth**, where you get credentials to trade for an access token
+- logging in requires **credentials** in a process called **authentication** to identify the client to API provider
+  - **basic auth**: username and password passed along in `Authorization` HTTP header
+  - **API key auth**: key is either passed along in `Authorization` header, or in the url
+  - **OAuth2**: automates key exchange and trades user credentials for an access token; most of the code & requests are done behind the scenes, resulting in a seamless experience for the user
+    - usually the process involves the user clicking a "connect" button on the first website, which sends a callback url leading to the second website for the user to log in, and then a lot of code is sent back and forth between the first website and the second website's server in order to generate an access token
+    - user can give specific permissions, aka **scope**
+
 
 ### Sources:
 https://zapier.com/learn/apis/
