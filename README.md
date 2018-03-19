@@ -41,6 +41,10 @@ This is a collection of various notes I've made while learning how to program
   - Device testing
     - or Cross Browser Testing Services
 
+## CS Concepts
+- Data structures
+
+
 ####TO LEARN:  
 **MongoDB**  
 **ExpressJS**
