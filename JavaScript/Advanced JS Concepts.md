@@ -10,9 +10,9 @@
 ### Hoisting
   - behind the scenes, JS will hoist certain things to the top, including variable declarations (but not initializations) and function declarations
 ### Null vs Undefined
-  - both are empty values, but 'undefined' is a placeholder JS uses for declared but uninitialized variables, whereas null is a user-assigned value. typeof(undefined) is undefined, but typeof(null) is object 
+  - both are empty values, but 'undefined' is a placeholder JS uses for declared but uninitialized variables, whereas null is a user-assigned value. typeof(undefined) is undefined, but typeof(null) is object
 ### Prototypical Inheritance
-  - all objects have a property called "prototype" which houses methods and properties; *inheritance and lookup via prototype chain instead of explicit declaration within each object
+  - all objects have a property called "prototype" which houses methods and properties; (inheritance and lookup via prototype chain instead of explicit declaration within each object)
 ### Keyword `this`
   - takes the value of the closest parent object, e.g. in an object declaration, `this` takes the value of the object
   - refers to the global object if not within an object declaration
@@ -29,7 +29,7 @@
 ### IIFE
   - immediately-invoked function expression; usually used for data privacy b/c variables created w/in an IIFE cannot be accessed outside the scope of the function; IIFEs are anonymous functions and can only be used once
 ### Promises
-  - code structure for avoiding callback hell; assumes user inputs are valid in order to continue through the function, & then checks at the end 
+  - code structure for avoiding callback hell; assumes user inputs are valid in order to continue through the function, & then checks at the end
 
 
 Creating functions:
@@ -38,6 +38,6 @@ Expression w/ return value of function - `var myFunc = function() {logic}` OR `v
 
 ## Best Practices
 - `let` & `const` don't hoist, use blockscope not function scope, & are only ES6. const cannot be reassigned
-- 
+-
 - Use arrow notation `param => return expression` or `(param, param2) => {statement}`
 - Use `===` over `==` (both comparison operators, but `==` coerces the two values before checking for equality; `===` compares value & type)

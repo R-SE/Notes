@@ -1,4 +1,4 @@
-##Agile Project Management Techniques
+## Agile Project Management Techniques
 
 - short cycle times
 - constant contact with client/user to keep project specs up to date
@@ -9,17 +9,16 @@
 - pair programming
 2) SCRUM
 
-####Some best practices:
+#### Some best practices:
 - Keep modules independent (low coupling)
 - Direct modules at focused goal (cohesive)
 - Keep modules incapsulated
 
 DRY - Don't Repeat Yourself
 
-##Approach To Problem-Solving
+## My Approach To Problem-Solving
 1) Define Problem: fully understand and clarify the problem, then break it into pieces and see if there are any analogues
 2) Create Plan: outline strategy and select parts to work on
 3) Execute
-4)
 
 APE: Assess, Plan, Execute

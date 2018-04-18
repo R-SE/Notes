@@ -3,6 +3,8 @@ This is a collection of various notes I've made while learning how to program
 
 <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" width="50" height="50">
 
+  - semantic markup
+  - accessibility
   - forms
 
 <img src="http://www.blackbirdsolutions.com.au/sites/default/files/styles/medium/public/blog/css3-logo.png?itok=r8kt8WZA" width="55" height="55">
@@ -25,11 +27,10 @@ This is a collection of various notes I've made while learning how to program
     + Gulp, Webpack, other build tools
 - **JQuery** (library)
 - **ReactJS** (framework)
-- AJAX
+- AJAX & JSON
     - external APIs (esp. XHR)
-    - JSON
 - ECMAScript6 & Babel
-
+- Mocha & Chai
 
 ### Workflow Tools
 - Linux CLI
@@ -43,8 +44,8 @@ This is a collection of various notes I've made while learning how to program
 
 ## CS Concepts
 - Data structures
+- Algorithms
 
 
 ####TO LEARN:  
-**MongoDB**  
-**ExpressJS**
+Here's [my main path](https://gist.github.com/R-SE/4cd41fe3e459b080a84b51f6e628c35a).
