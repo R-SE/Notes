@@ -33,6 +33,3 @@
 Creating functions:
 Declaration - `function myFunc(params) {statement}`
 Expression w/ return value of function - `var myFunc = function() {logic}` OR `var myObj = {myFunc: function() {logic}}`
-
-----------------------------
-### HOW JS Actually runs
