@@ -1,5 +1,3 @@
-# Core programming concepts
-
 ### Event Delegation
   - the process of attaching an event-listener to an element so that event handlers can fire on any of its descendants
   - eg putting a listener on a `<ul>`, and having the event handler figure out which `<li>` to work with
@@ -36,8 +34,5 @@ Creating functions:
 Declaration - `function myFunc(params) {statement}`
 Expression w/ return value of function - `var myFunc = function() {logic}` OR `var myObj = {myFunc: function() {logic}}`
 
-## Best Practices
-- `let` & `const` don't hoist, use blockscope not function scope, & are only ES6. const cannot be reassigned
--
-- Use arrow notation `param => return expression` or `(param, param2) => {statement}`
-- Use `===` over `==` (both comparison operators, but `==` coerces the two values before checking for equality; `===` compares value & type)
+----------------------------
+### HOW JS Actually runs
