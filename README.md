@@ -7,7 +7,7 @@ This is a collection of various notes I've made while learning how to program
   - accessibility
   - forms
 
-<img src="http://www.blackbirdsolutions.com.au/sites/default/files/styles/medium/public/blog/css3-logo.png?itok=r8kt8WZA" width="55" height="55">
+<img src="https://i0.wp.com/www.organicweb.com.au/wp-content/uploads/2012/10/css3-250x250jpg.jpg?resize=250%2C250&quality=96&strip=all&ssl=1" width="55" height="55">
 
   - file architecture
     - SMACSS organization + BEM naming methodology
