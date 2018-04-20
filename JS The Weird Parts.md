@@ -21,3 +21,21 @@ Notes from JavaScript: The Weird Parts
 - When deciding the order that an expression is evaluated in, the JS parser first looks to [**operator precedence** and then **associativity**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
   - The higher the operator precedence (e.g. grouping `()` being highest, `*` beating out `+`, etc), the sooner that expression wil be evaluated
   - In the case that remaining expressions have operators with equal precedence (`var a = b = c`), the parser checks the associativity of an operator. Most operators are *left-to-right* associative, but the assignment operator is actually *right-to-left*, meaning that in the example above, the parser first evaluates `b = c`.
+
+### Namespaces
+- Other languages have namespaces or containers for same-named variables and functions, to avoid namespace collision, but JS does not
+- we can 'fake' namespaces by attaching variables and functions to objects, thus creating methods and properties, instead of leaving them floating in the global space
+
+### First-class Functions
+- like other values, functions can be copied, passed around, assigned to variables, created on the fly with function literal syntax (IIFEs);
+- functions are a special kind of object, so you can attach props and methods, but **also** have special capabilities
+  - doesn't have to have a name (anonymous function)
+  - body of the function is put into the `code` property of the function object, and this property is **invocable**
+
+### Function Statements vs Expressions
+- statements do work but don't return values, while expressions return values
+- function statements vs expressions -> hoisting, passing as callbacks, etc
+
+### Passing by value vs by reference
+- primitives are passed by value (the value is copied, and the names point to different memory addresses)
+- objects are passed by reference (the names point to the same address)
