@@ -51,6 +51,11 @@ Notes from JavaScript: The Weird Parts
 - function statements vs expressions -> hoisting, passing as callbacks, etc
 #### IIFEs
 - IIFEs are function expressions invoked immediately after creation by putting parens after it.
+- expressions can be created by assigning a function to a variable, but you can also trick the syntax parser by wrapping your function in parens:
+```
+function() {console.log('hi')} //throws error bc parser expects function statement
+(function() {console.log('hi')}) //doesn't throw error bc it expects expression
+```
 
 ### Closures
 - In other languages that don't have closures, a function invocation cannot use a variable not within its scope. The variable would have to be passed to it somehow, usually through the params.
@@ -66,7 +71,7 @@ function a() {
 }
 a(); // 'Rose'
 ```
-- a closure is the combo of a function with its outer lexical environment in which the function was declared (and the variables in-scope at the time of the function's creation). It doesn't have to be the environment immediately outside of it; Chrome seems to define the closure as the one containing the sought variable (will call 'c' the closure):
+- a **closure is the combo of a function with its context (the variables it depends on)** ~~its outer lexical environment in which the function was declared (and the variables in-scope at the time of the function's creation)~~. It doesn't have to be the environment immediately outside of it; Chrome seems to define the closure as the one containing the sought variable (will call 'c' the closure):
 ```
 function c() {
   var name = 'Rose';
@@ -80,6 +85,23 @@ function c() {
 }
 c();
 ```
+So it would seem that a closure is created when an inner function is not self-contained, and must reference a variable in an outer lexical environment
+- Interesting implications arise when an inner function starts referencing variables in an outer function that's already been returned
+```
+  function stopwatch() {
+    var start = Date.now();
+    function getDelay() {
+      return Date.now() - start;
+    }
+    return getDelay;
+  }
+  var timer = stopwatch(); // we invoke stopwatch, and getDelay func gets assigned to timer
+  // pass some time
+  timer(); // then we invoke the inner function
+```
+This function works because **JS engine detects that the inner function relies on variables in the outer function which has already returned**, so it stores those variables in memory -- creating a closure (see this for a visualization of a closure: https://www.youtube.com/watch?v=rBBwrBRoOOY&t=7m55s)
+- The outer function has already returned, so it's execution context is popped off the stack, and usually all its variables are then deleted by a process called **garbage collection**, but in this case, JS keeps in memory the variable that's still being referenced! So the inner function and its execution context still have reference and access to the variables in its outer environment
+- we call it a closure because the inner function has "closed in" its outer variables; it creates an enclosure
 
 ### Passing by value vs by reference
 - primitives are passed by value (the value is copied, and the names point to different memory addresses)
