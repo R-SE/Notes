@@ -140,3 +140,34 @@ function greetSpanish(name) {
 
 ### Whitespace
 - invisible characters that create visual space in your code (carriage returns, tabs, spaces)
+
+### Call, Bind, Apply
+- methods on the function object
+- **'function borrowing':** borrowing methods from one object to use on another object (generally used with call/apply)
+- **for currying:** (used with bind) permanently setting parameters
+```
+let multiply = (a,b) => a * b;
+let double = multiply.bind(this, 2);
+double(5); // 10, note the number of arguments
+```
+- `bind` binds/attaches the object you pass in, to the function it's called on, to `this`:
+```
+var logName = (color, num) => console.log(this.name, color, num);
+var Rose = {name: 'Rose'};
+var logNameRose = logName.bind(Rose);
+logNameRose('red', 6); // 'Rose red 6';
+```
+- call and apply invoke the function immediately unlike bind
+- apply takes its arguments in an array unlike call
+```
+logName.call(Rose, 'red', 6);
+logName.apply(Rose, ['red', 6]);
+```
+
+### Currying
+- creating a copy of a function, but with preset parameters
+
+### Classical vs Prototypal Inheritance
+- inheritance: one object gets access to the methods and props of another object
+- classical inheritance is the pattern found in Java, C, etc. long history, but can be verbose
+- prototypal inheritance 
